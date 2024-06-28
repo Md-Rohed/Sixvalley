@@ -28,11 +28,11 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="hidden lg:w-1/4 lg:block">
+      <div className="hidden  lg:block border">
         <Image
           src="/assets/images/banner/hero_banner4.png"
           alt="Banner 4"
-          height={380}
+          height={400}
           width={240}
           className="object-cover w-full h-full"
         />

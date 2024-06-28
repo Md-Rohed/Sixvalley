@@ -6,7 +6,7 @@ const ProductCard = (props) => {
     rating,
     images,
     discount,
-    category: { name: categoryName },
+
     purchase_price,
   } = props?.productsData;
 
@@ -69,9 +69,6 @@ const ProductCard = (props) => {
             </span>
           </div>
 
-          <p className="text-[var(--grey-text-color)] text-[10.98px] font-normal">
-            {categoryName}
-          </p>
           <h6 className="text-[var(--text-color)] text-[14.64px] font-bold">
             {name}
           </h6>

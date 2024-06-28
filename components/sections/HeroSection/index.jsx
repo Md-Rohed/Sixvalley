@@ -6,12 +6,13 @@ const HeroSection = () => {
   return (
     <>
       <BrowseNavigation />
-      <div className="container mx-auto flex justify-between">
-        <div className="  rounded-[5px] xl:col-span-2 col-span-12 ">
+      <div className="container mx-auto flex justify-between gap-4">
+        <div className="w-[25%]  ">
           <Categories />
         </div>
-
-        <Banner />
+        <div className="w-[75%]  ">
+          <Banner />
+        </div>
       </div>
 
       {/* for mobiles */}

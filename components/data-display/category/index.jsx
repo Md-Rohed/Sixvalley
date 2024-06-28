@@ -1,4 +1,4 @@
-import { getCategories } from "api/getCartegoryData";
+import { getCategories } from "libs/api/getCartegoryData";
 import { RightArrowIcon } from "libs/icons";
 
 const Categories = async () => {

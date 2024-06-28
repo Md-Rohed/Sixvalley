@@ -1,6 +1,6 @@
 "use client";
 import ProductCard from "@/components/data-display/card/ProductCard";
-import { getProductsListApi } from "api/getProductListApi";
+import { getProductsListApi } from "libs/api/getProductListApi";
 import { useEffect, useState } from "react";
 
 const ProductsSection = () => {
