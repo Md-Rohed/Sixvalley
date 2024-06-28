@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <>
       <BrowseNavigation />
-      <div className="container mx-auto flex justify-between gap-4">
+      <div className="container mx-auto md:flex justify-between gap-4 hidden">
         <div className="w-[25%]  ">
           <Categories />
         </div>
@@ -27,12 +27,7 @@ const HeroSection = () => {
         <div className="">
           <div className="xl:ms-[15px] pt-[15px]">
             <div className="grid  grid-cols-1 sm:grid-cols-2 gap-4 ">
-              <div className=" bg-slate-500 rounded-[3px] banner1 h-[300px] sm:h-[100%]"></div>
-              <div className=" bg-slate-500 rounded-[3px] banner4 text-center py-[35px] px-[30px]">
-                <Banner />{" "}
-              </div>
-              <div className="bg-slate-500 rounded-[3px]   banner2 h-[300px] "></div>
-              <div className=" bg-slate-500 rounded-[3px] banner3 h-[300px]"></div>
+              <Banner />{" "}
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import {
+  AppDownloadLinkIcon,
   FacebookIcon,
   InstagramIcon,
   LogoIcon,
@@ -11,7 +12,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mt-5 bg-no-repeat bg-cover bg-[#2F436D] border bg-[url('/assets/images/banner/footer_bg.png')">
+    <div
+      className=" mt-5 bg-no-repeat bg-cover bg-[#284370] border"
+      style={{
+        backgroundImage: `url('/assets/images/banner/footer_bg.png'`,
+      }}
+    >
       <div className="flex justify-between invisible py-8 md:visible">
         <div></div>
         <div className="flex space-x-5">
@@ -20,17 +26,17 @@ const Footer = () => {
           <FacebookIcon />
           <YoutubeIcon />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center gap-[0.25rem]">
           <PhoneIcon />
-          <div>
+          <div className="text-white md:mr-[10.063rem]">
             <p>Hotline</p>
             <p>+90-327-5345543</p>
           </div>
         </div>
       </div>
-      <div className="bg-[#171c2e] px-[6.188rem] bg-cover px-s100 flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
+      <div className="bg-[#171c2e] opacity-80 px-[6.188rem] bg-cover px-s100 flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
         <div className="flex flex-col items-center justify-center text-center">
-          <LogoIcon />
+          <LogoIcon className="text-white" />
           <div className="">
             <div className="font-light leading-6 text-white">
               Suspendisse ultrices at diam lectus nullam.
@@ -48,18 +54,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-4 mt-5 md:flex-row">
-            <Image
-              alt=""
-              height={45}
-              width={140}
-              src="/assets/images/playStore.png"
-            />
-            <Image
-              alt=""
-              height={45}
-              width={141}
-              src="/assets/images/appleStore.png"
-            />
+            <AppDownloadLinkIcon />
           </div>
         </div>
 

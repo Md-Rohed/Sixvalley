@@ -13,6 +13,15 @@ import Cart from "@/icons/cart.svg";
 import Search from "@/icons/search.svg";
 import Menu from "@/icons/menu.svg";
 import RightArrow from "@/icons/rightArrow.svg";
+import AppDownloadLink from "@/icons/appDownloadLink.svg";
+
+export function AppDownloadLinkIcon({ className }) {
+  return (
+    <AppDownloadLink
+      className={`h-[0.75rem] w-[0.75rem] text-black ${className} `}
+    />
+  );
+}
 
 export function RightArrowIcon({ className }) {
   return (

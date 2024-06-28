@@ -14,7 +14,7 @@ const ProductCard = (props) => {
 
   return (
     <>
-      <div className="shadow-lg bg-[var(--white-color)] p-[10px] rounded-[5px]">
+      <div className="shadow-lg bg-[var(--white-color)] p-[10px] rounded-[0.625rem]">
         <div className="rounded-[5px] relative product-card">
           <div className="flex flex-col gap-[11px] absolute right-2 top-2  icon-container">
             <div className="cursor-pointer rounded-full w-[30px] h-[30px] border border-[var(--primary-color)] flex justify-center items-center bg-[var(--white-color)]">

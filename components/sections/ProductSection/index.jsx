@@ -41,7 +41,7 @@ const ProductsSection = () => {
       <div className="border-b pb-5">
         <h3 className="font-medium text-2xl">All Products</h3>
       </div>
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[1rem]">
         {isLoading
           ? Array.from({ length: 10 }).map((_, index) => (
               <p key={index}>Loading...</p>
