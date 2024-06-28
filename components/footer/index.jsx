@@ -13,7 +13,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div
-      className=" mt-5 bg-no-repeat bg-cover bg-[#284370] border"
+      className="mt-5 bg-no-repeat bg-cover bg-[#284370] border"
       style={{
         backgroundImage: `url('/assets/images/banner/footer_bg.png'`,
       }}
@@ -34,8 +34,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#171c2e] opacity-80 px-[6.188rem] bg-cover px-s100 flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
-        <div className="flex flex-col items-center justify-center text-center">
+      <div className="bg-[#171c2e] opacity-80 px-[1rem] md:px-[6.188rem] bg-cover px-s100 flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
+        <div className="flex flex-col md:items-center justify-center md:text-center">
           <LogoIcon className="text-white" />
           <div className="">
             <div className="font-light leading-6 text-white">
@@ -98,7 +98,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterSection = ({ title, items }) => (
-  <div className="flex flex-col items-center space-y-2 md:items-start">
+  <div className="flex flex-col space-y-2 md:items-start">
     <div className="font-bold leading-7 text-white text-fs16">{title}</div>
     {items.map((item, index) => (
       <div key={index} className="font-light leading-7 text-white text-fs14">

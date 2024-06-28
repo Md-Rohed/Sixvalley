@@ -20,7 +20,7 @@ export default function MainNavbar() {
           <LogoIcon />
         </div>
         <div className="flex justify-center items-center flex-1">
-          <div className="border w-[551px] mx-auto rounded-[25px] flex justify-between items-center p-[3px] ">
+          <div className="border w-[10rem] md:w-[551px] mx-auto rounded-[25px] flex justify-between items-center p-[3px] ">
             <div>
               <div className="flex justify-start items-center gap-[15px] border-r  pr-[7px] ps-[14px]">
                 <MenuIcon />
@@ -39,7 +39,7 @@ export default function MainNavbar() {
           </div>
         </div>
         <div></div>
-        <div>
+        <div className="hidden md:block">
           <ul className="list-none flex justify-center items-center gap-[30px]">
             <li className="border-r border-[#DEDEDE]  pr-[15px]">
               <ProfileIcon />
