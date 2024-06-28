@@ -11,7 +11,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mt-5 bg-no-repeat bg-cover bg-[#2F436D] border  bg-[url('/assets/images/banner/footer_bg.png')">
+    <div className="mt-5 bg-no-repeat bg-cover bg-[#2F436D] border bg-[url('/assets/images/banner/footer_bg.png')">
       <div className="flex justify-between invisible py-8 md:visible">
         <div></div>
         <div className="flex space-x-5">
@@ -31,23 +31,23 @@ const Footer = () => {
       <div className="bg-[#171c2e] px-[6.188rem] bg-cover px-s100 flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
         <div className="flex flex-col items-center justify-center text-center">
           <LogoIcon />
-          <div className="mt-s14 mb-s17">
-            <div className="font-light leading-6 text-white text-fs14">
+          <div className="">
+            <div className="font-light leading-6 text-white">
               Suspendisse ultrices at diam lectus nullam.
             </div>
-            <div className="font-light leading-6 text-white text-fs14">
+            <div className="font-light leading-6 text-white">
               Nisl, sagittis viverra enim erat tortor ultricies{" "}
             </div>
           </div>
 
-          <div className="font-light leading-6 text-white text-fs14">
+          <div className="font-light leading-6 text-white">
             1901 Thornridge Cir. Shiloh, Hawaii 81063
           </div>
-          <div className="mt-2 font-light leading-6 text-white text-fs14">
+          <div className="mt-2 font-light leading-6 text-white">
             support@example.cpm
           </div>
 
-          <div className="flex flex-col gap-4 mt-5 md:flex-row ">
+          <div className="flex flex-col gap-4 mt-5 md:flex-row">
             <Image
               alt=""
               height={45}

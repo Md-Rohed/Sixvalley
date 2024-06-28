@@ -12,6 +12,15 @@ import Wishlist from "@/icons/wishlist.svg";
 import Cart from "@/icons/cart.svg";
 import Search from "@/icons/search.svg";
 import Menu from "@/icons/menu.svg";
+import RightArrow from "@/icons/rightArrow.svg";
+
+export function RightArrowIcon({ className }) {
+  return (
+    <RightArrow
+      className={`h-[0.75rem] w-[0.75rem] text-black ${className} `}
+    />
+  );
+}
 
 export function ProfileIcon({ className }) {
   return (
