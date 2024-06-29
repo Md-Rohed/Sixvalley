@@ -5,6 +5,7 @@ import {
   LogoIcon,
   PhoneIcon,
   TwitterIcon,
+  WhiteLogoIcon,
   YoutubeIcon,
 } from "libs/icons";
 import React from "react";
@@ -60,7 +61,7 @@ const Footer = () => {
       </div>
       <div className="bg-[#171c2e] opacity-80 px-[1rem] md:px-[6.188rem] bg-cover flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
         <div className="flex flex-col md:items-center justify-center md:text-center">
-          <LogoIcon className="text-white" />
+          <WhiteLogoIcon />
           <div className="">
             <div className="font-light leading-6 text-white">
               Suspendisse ultrices at diam lectus nullam.

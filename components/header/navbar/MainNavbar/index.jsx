@@ -30,7 +30,7 @@ export default function MainNavbar() {
               <input
                 type="search"
                 placeholder="Search for items or store..."
-                className="w-full h-[2.813rem] "
+                className="w-full h-[2.813rem] focus:outline-none"
               />
             </div>
             <button className="bg-[#1B7FED] rounded-e-[25px] px-[20px] py-[11px]">

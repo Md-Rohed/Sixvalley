@@ -16,6 +16,13 @@ import RightArrow from "@/icons/rightArrow.svg";
 import AppDownloadLink from "@/icons/appDownloadLink.svg";
 import Compare from "@/icons/compare.svg";
 import Eye from "@/icons/eye.svg";
+import WhiteLogo from "@/icons/6vallyWhiteLogo.svg";
+
+export function WhiteLogoIcon({ className }) {
+  return (
+    <WhiteLogo className={`h-[0.75rem] w-[0.75rem] text-black ${className} `} />
+  );
+}
 
 export function EyeIcon({ className }) {
   return <Eye className={`h-[0.75rem] w-[0.75rem] text-black ${className} `} />;
