@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import ProductCard from "@/components/data-display/card/ProductCard";
+import ProductSkeleton from "../ProductSection/ProaductSkeleton";
 
 export const base_url = "https://6valley.6amtech.com/api/v1";
 
@@ -123,7 +123,7 @@ const ProductType = () => {
               <>
                 {!hasMore && (
                   <div className="flex items-center justify-center w-full py-10">
-                    <p className="text-lg font-medium text-gray-600">
+                    <p className="text-lg font-medium text-gray-600 text-center">
                       No products found.
                     </p>
                   </div>
@@ -135,13 +135,12 @@ const ProductType = () => {
 
         {hasMore && (
           <div ref={loaderRef}>
-            <section className="flex flex-wrap justify-center gap-2 md:justify-between">
-              {/* <ProductCardLoading />
-              <ProductCardLoading />
-              <ProductCardLoading />
-              <ProductCardLoading />
-              <ProductCardLoading /> */}
-              loading
+            <section className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[1rem]">
+              <ProductSkeleton />
+              <ProductSkeleton />
+              <ProductSkeleton />
+              <ProductSkeleton />
+              <ProductSkeleton />
             </section>
           </div>
         )}

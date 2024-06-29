@@ -7,8 +7,32 @@ import {
   TwitterIcon,
   YoutubeIcon,
 } from "libs/icons";
-import Image from "next/image";
 import React from "react";
+
+const footerData = [
+  {
+    title: "Accounts",
+    items: [
+      "Become a Delivery Man",
+      "Open Your Store",
+      "Profile",
+      "Help & Support",
+    ],
+  },
+  {
+    title: "Quick Links",
+    items: ["Flash Deals", "Featured Products", "Top Stores", "New Arrivals"],
+  },
+  {
+    title: "Other",
+    items: [
+      "Privacy Policy",
+      "Term & Conditions",
+      "Refund Policy",
+      "Support Ticket",
+    ],
+  },
+];
 
 const Footer = () => {
   return (
@@ -34,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#171c2e] opacity-80 px-[1rem] md:px-[6.188rem] bg-cover px-s100 flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
+      <div className="bg-[#171c2e] opacity-80 px-[1rem] md:px-[6.188rem] bg-cover flex md:flex-row flex-col justify-center space-y-7 md:space-y-0  md:justify-between py-4">
         <div className="flex flex-col md:items-center justify-center md:text-center">
           <LogoIcon className="text-white" />
           <div className="">
@@ -99,7 +123,7 @@ export default Footer;
 
 const FooterSection = ({ title, items }) => (
   <div className="flex flex-col space-y-2 md:items-start">
-    <div className="font-bold leading-7 text-white text-fs16">{title}</div>
+    <div className="font-bold leading-7 text-white">{title}</div>
     {items.map((item, index) => (
       <div key={index} className="font-light leading-7 text-white text-fs14">
         {item}

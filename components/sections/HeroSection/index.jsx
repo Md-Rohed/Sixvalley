@@ -7,10 +7,10 @@ const HeroSection = () => {
     <>
       <BrowseNavigation />
       <div className="container mx-auto md:flex justify-between gap-4 hidden">
-        <div className="w-[25%]  ">
+        <div className="w-[20%]">
           <Categories />
         </div>
-        <div className="w-[75%]  ">
+        <div className="w-[80%] mt-[0.938rem]  ">
           <Banner />
         </div>
       </div>

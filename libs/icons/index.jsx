@@ -14,6 +14,18 @@ import Search from "@/icons/search.svg";
 import Menu from "@/icons/menu.svg";
 import RightArrow from "@/icons/rightArrow.svg";
 import AppDownloadLink from "@/icons/appDownloadLink.svg";
+import Compare from "@/icons/compare.svg";
+import Eye from "@/icons/eye.svg";
+
+export function EyeIcon({ className }) {
+  return <Eye className={`h-[0.75rem] w-[0.75rem] text-black ${className} `} />;
+}
+
+export function CompareIcon({ className }) {
+  return (
+    <Compare className={`h-[0.75rem] w-[0.75rem] text-black ${className} `} />
+  );
+}
 
 export function AppDownloadLinkIcon({ className }) {
   return (

@@ -3,8 +3,8 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex h-screen space-x-s14 max-h-[200px] min-h-[200px] w-full md:max-h-[490px] md:min-h-[490px]">
-      <div className="flex flex-col space-y-2 lg:w-3/4">
+    <div className="flex justify-between">
+      <div className="flex flex-col space-y-2 w-full md:w-[77%] max-h-[470px]">
         <Image
           src="/assets/images/banner/hero_banner1.png"
           alt="Banner 1"
@@ -28,11 +28,11 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="hidden  lg:block border">
+      <div className="hidden  lg:block">
         <Image
           src="/assets/images/banner/hero_banner4.png"
           alt="Banner 4"
-          height={400}
+          height={500}
           width={240}
           className="object-cover w-full h-full"
         />

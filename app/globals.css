@@ -3,3 +3,17 @@
 @tailwind utilities;
 
 
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+  }
+  
+  .product-card:hover .icon-container {
+    visibility: visible;
+    opacity: 1;
+  }
