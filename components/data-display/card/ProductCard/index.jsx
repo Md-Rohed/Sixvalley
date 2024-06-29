@@ -1,6 +1,5 @@
 import { CartIcon, CompareIcon, EyeIcon, WishlistIcon } from "libs/icons";
 import Image from "next/image";
-// import { Rating } from "primereact/rating";
 
 const IconButton = ({ Icon, extraClasses = "" }) => (
   <div
@@ -40,18 +39,6 @@ const ProductCard = ({ productsData }) => {
       </div>
 
       <div className="text-center mt-4">
-        <div className="text-center flex justify-center items-center gap-0.5 mb-1">
-          {/* <Rating
-            value={Math.floor(parseFloat(rating[0]?.average))}
-            readOnly
-            cancel={false}
-            style={{ color: "var(--rating-color)" }}
-          /> */}
-          <span className="text-xs font-normal">
-            ({Math.floor(parseFloat(rating[0]?.average))})
-          </span>
-        </div>
-
         <h6 className="text-[0.906rem] font-bold">{name}</h6>
         <h6 className="text-[0.906rem] font-bold">
           <span className="text-sm font-normal line-through">

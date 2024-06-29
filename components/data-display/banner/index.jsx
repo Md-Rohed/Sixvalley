@@ -24,6 +24,7 @@ const Banner = () => {
             src="/assets/images/banner/hero_banner3.png"
             height={150}
             width={325}
+            alt="banner3"
             className="object-cover w-1/2"
           />
         </div>

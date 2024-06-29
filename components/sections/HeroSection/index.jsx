@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div className="w-[20%]">
           <Categories />
         </div>
-        <div className="w-[80%] mt-[0.938rem]  ">
+        <div className="w-[80%] mt-[0.938rem]">
           <Banner />
         </div>
       </div>

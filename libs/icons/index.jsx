@@ -1,4 +1,4 @@
-import Close from "@/icons/CloseIcon.svg";
+import Close from "@/icons/closeIcon.svg";
 import ArrowDown from "@/icons/arrowDown.svg";
 import Twitter from "@/icons/twitter.svg";
 import Facebook from "@/icons/facebook.svg";
