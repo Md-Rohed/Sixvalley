@@ -14,20 +14,17 @@ const HeroSection = () => {
           <Banner />
         </div>
       </div>
-
-      {/* for mobiles */}
-
-      <div className="container mx-auto grid grid-cols-1 lg:hidden   ">
-        <div className=" hidden sm:block rounded-[5px]  ">
-          <div className=" bg-[var(--white-color)] rounded-[5px] lg:ps-[15px] lg:pr-[23px] h-[395px] overflow-y-auto scrollbar ">
+      <div className="container mx-auto grid grid-cols-1 lg:hidden">
+        <div className=" hidden sm:block rounded-[5px]">
+          <div className=" bg-white rounded-[5px] overflow-y-auto scrollbar">
             <Categories />
           </div>
         </div>
 
-        <div className="">
-          <div className="xl:ms-[15px] pt-[15px]">
-            <div className="grid  grid-cols-1 sm:grid-cols-2 gap-4 ">
-              <Banner />{" "}
+        <div>
+          <div className="pt-[15px]">
+            <div className="grid  grid-cols-1 sm:grid-cols-2 gap-4">
+              <Banner />
             </div>
           </div>
         </div>

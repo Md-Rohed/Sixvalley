@@ -9,12 +9,8 @@ const ServiceCard = ({ item }) => {
           <Image src={item.img2} width={30} height={30} alt={item.title} />
         )}
       </div>
-      <h3 className="mt-3 font-bold text-lg text-[var(--text-color)]">
-        {item.title}
-      </h3>
-      <p className="mt-4 font-normal text-sm text-[var(--service-des-color)]">
-        {item.des}
-      </p>
+      <h3 className="mt-3 font-bold text-lg">{item.title}</h3>
+      <p className="mt-4 font-normal text-sm">{item.des}</p>
     </div>
   );
 };

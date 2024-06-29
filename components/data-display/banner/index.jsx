@@ -28,7 +28,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="hidden  lg:block">
+      <div className="hidden lg:block">
         <Image
           src="/assets/images/banner/hero_banner4.png"
           alt="Banner 4"

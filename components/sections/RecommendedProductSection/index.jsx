@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProductCard from "@/components/data-display/card/ProductCard";
 import ProductSkeleton from "../ProductSection/ProaductSkeleton";
+import { NewArrivalIcon } from "libs/icons";
 
 export const base_url = "https://6valley.6amtech.com/api/v1";
 
@@ -174,7 +175,9 @@ const List = ({
         {type}
       </div>
       {showImage && (
-        <div className="flex items-start justify-start">new arrival</div>
+        <div className="flex items-start justify-start">
+          <NewArrivalIcon />
+        </div>
       )}
     </div>
   );

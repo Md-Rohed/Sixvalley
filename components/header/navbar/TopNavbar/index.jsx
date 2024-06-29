@@ -19,7 +19,7 @@ export default function TopNavbar() {
               </button>
             </div>
             <div className="col-span-6 text-primary md:flex justify-center">
-              <p className="text-[.625rem] md:text-sm  md:font-[600]">
+              <p className="text-[.625rem] md:text-sm  md:font-medium">
                 GEt 50% discount in all product from June 2023 to december 2023
               </p>
             </div>

@@ -38,7 +38,7 @@ const footerData = [
 const Footer = () => {
   return (
     <div
-      className="mt-5 bg-no-repeat bg-cover bg-[#284370] border"
+      className="mt-5 bg-no-repeat bg-cover bg-[#284370]"
       style={{
         backgroundImage: `url('/assets/images/banner/footer_bg.png'`,
       }}
@@ -67,7 +67,7 @@ const Footer = () => {
               Suspendisse ultrices at diam lectus nullam.
             </div>
             <div className="font-light leading-6 text-white">
-              Nisl, sagittis viverra enim erat tortor ultricies{" "}
+              Nisl, sagittis viverra enim erat tortor ultricies
             </div>
           </div>
 
@@ -113,8 +113,8 @@ const Footer = () => {
           ]}
         />
       </div>
-      <div className="flex justify-center items-center text-white text-fs14 font-normal leading-[22px] py-6">
-        2021 COPYRIGHT All Rights Reserved By 6amMart.com
+      <div className="flex justify-center items-center text-white text-[14px] font-normal leading-[22px] py-6">
+        2024 COPYRIGHT All Rights Reserved By 6amMart.com
       </div>
     </div>
   );
@@ -126,7 +126,7 @@ const FooterSection = ({ title, items }) => (
   <div className="flex flex-col space-y-2 md:items-start">
     <div className="font-bold leading-7 text-white">{title}</div>
     {items.map((item, index) => (
-      <div key={index} className="font-light leading-7 text-white text-fs14">
+      <div key={index} className="font-light leading-7 text-white">
         {item}
       </div>
     ))}

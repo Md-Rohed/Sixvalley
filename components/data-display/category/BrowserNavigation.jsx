@@ -4,10 +4,7 @@ import Image from "next/image";
 const BrowseNavigation = () => {
   return (
     <>
-      <div
-        className="bg-white lg:block hidden"
-        style={{ borderBottom: "1px solid rgba(185, 185, 185, 0.2)" }}
-      >
+      <div className="bg-white lg:block hidden border-b">
         <div className="container mx-auto flex">
           <div className="md:w-[20%]">
             <div className="bg-[#1B7FED] flex justify-between items-center px-5 py-4">

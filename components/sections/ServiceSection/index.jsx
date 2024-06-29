@@ -1,4 +1,5 @@
 import ServiceListCard from "@/components/data-display/card/ServiceListCard";
+import Newsletter from "../Newsletter";
 
 export default function ServiceSection() {
   const servicesList = [
@@ -41,6 +42,9 @@ export default function ServiceSection() {
           <ServiceListCard item={item} key={index} />
         ))}
       </div>
+      <div className="mx-auto container">
+        <Newsletter />
+      </div>{" "}
     </div>
   );
 }

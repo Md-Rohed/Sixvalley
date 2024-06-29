@@ -1,5 +1,5 @@
+"use client";
 import {
-  ArrowDownIcon,
   CartIcon,
   LogoIcon,
   MenuIcon,
@@ -8,21 +8,29 @@ import {
   ShuffleIcon,
   WishlistIcon,
 } from "libs/icons";
+import { useState } from "react";
 
 export default function MainNavbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <div
-      className="py-[17px]"
-      style={{ borderBottom: "1px solid rgba(185, 185, 185, 0.2)" }}
-    >
+    <div className="py-[17px] border-b">
       <div className="container mx-auto flex justify-between items-center ">
-        <div>
+        <div className="flex items-center gap-4">
+          <button className="md:hidden" onClick={toggleMobileMenu}>
+            <MenuIcon />
+          </button>
           <LogoIcon />
         </div>
+
         <div className="flex justify-center items-center flex-1">
           <div className="border w-[10rem] md:w-[551px] mx-auto rounded-[25px] flex justify-between items-center p-[3px] ">
             <div>
-              <div className="flex justify-start items-center gap-[15px] border-r  pr-[7px] ps-[14px]">
+              <div className="flex justify-start items-center gap-[15px] border-r pr-[7px] ps-[14px]">
                 <MenuIcon />
               </div>
             </div>
@@ -38,10 +46,10 @@ export default function MainNavbar() {
             </button>
           </div>
         </div>
-        <div></div>
+
         <div className="hidden md:block">
           <ul className="list-none flex justify-center items-center gap-[30px]">
-            <li className="border-r border-[#DEDEDE]  pr-[15px]">
+            <li className="border-r border-[#DEDEDE] pr-[15px]">
               <ProfileIcon />
             </li>
             <li className="border-r border-[#DEDEDE] pr-[15px] relative">

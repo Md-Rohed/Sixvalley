@@ -17,10 +17,26 @@ import AppDownloadLink from "@/icons/appDownloadLink.svg";
 import Compare from "@/icons/compare.svg";
 import Eye from "@/icons/eye.svg";
 import WhiteLogo from "@/icons/6vallyWhiteLogo.svg";
+import Mail from "@/icons/mail.svg";
+import NewArrival from "@/icons/newArrival.svg";
 
 export function WhiteLogoIcon({ className }) {
   return (
     <WhiteLogo className={`h-[0.75rem] w-[0.75rem] text-black ${className} `} />
+  );
+}
+
+export function NewArrivalIcon({ className }) {
+  return (
+    <NewArrival
+      className={`h-[0.75rem] w-[0.75rem] text-black ${className} `}
+    />
+  );
+}
+
+export function MailIcon({ className }) {
+  return (
+    <Mail className={`h-[0.75rem] w-[0.75rem] text-black ${className} `} />
   );
 }
 
