@@ -44,7 +44,9 @@ const ProductsSection = () => {
       </div>
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[1rem]">
         {isLoading
-          ? Array.from({ length: 10 }).map((_, index) => <ProductSkeleton />)
+          ? Array.from({ length: 10 }).map((_, index) => (
+              <ProductSkeleton key={index} />
+            ))
           : allProducts?.products?.map((data, index) => (
               <ProductCard key={index} productsData={data} />
             ))}

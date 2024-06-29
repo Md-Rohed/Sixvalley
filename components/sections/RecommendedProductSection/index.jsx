@@ -118,7 +118,7 @@ const ProductType = () => {
           <div className=" mt-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {data && data?.length > 0 ? (
               data?.map((item, index) => {
-                return <ProductCard productsData={item} />;
+                return <ProductCard productsData={item} key={index} />;
               })
             ) : (
               <>
